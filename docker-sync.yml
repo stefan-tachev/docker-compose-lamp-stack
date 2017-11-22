@@ -6,5 +6,5 @@ syncs:
   php-native-osx-sync: # tip: add -sync and you keep consistent names as a convention
     src: './html'
   db-native-osx-sync: # tip: add -sync and you keep consistent names as a convention
-    src: './mysql/data'  
+    src: './mysql/data'
     # sync_strategy: 'native_osx' # not needed, this is the default now
