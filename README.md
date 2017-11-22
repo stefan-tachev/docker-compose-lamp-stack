@@ -2,7 +2,7 @@
 
 A hopefully simple Docker-LAMP stack for OSx with phpmyadmin  
 
-Maybe I will add some more tools  
+Maybe I will add some more tools later
 Uses syncing for osx - should be faster  
 
 To run it you need docker-sync:  
