@@ -1,9 +1,6 @@
 ## Docker Compose LAMP stack with phpmyadmin and sync for osx
 
-A hopefully simple Docker-LAMP stack for OSx with phpmyadmin  
-
-Maybe I will add some more tools later
-Uses syncing for osx - should be faster  
+A hopefully simple Docker-LAMP stack for OSx with phpmyadmin. Uses syncing for osx - should be faster. Maybe I will add some more tools later.
 
 To run it you need docker-sync:  
 https://github.com/EugenMayer/docker-sync/wiki/1.-Installation
