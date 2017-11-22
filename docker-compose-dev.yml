@@ -1,0 +1,17 @@
+# this is our development docker-compose building on top of the production docker-compose, just mounting
+# the sync image - not redefining anything else
+
+version: "2"
+services:
+  php:
+    volumes:
+      - php-native-osx-sync:/var/www/html:nocopy # nocopy is important
+  db:
+    volumes:
+      - db-native-osx-sync:/var/lib/mysql:nocopy # nocopy is important
+# that the important thing
+volumes:
+  php-native-osx-sync:
+    external: true
+  db-native-osx-sync:
+    external: true

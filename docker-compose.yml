@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+   db:
+     build: ./mysql
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+     ports:
+       - "3306:3306"
+   php:
+     build: ./php
+     ports:
+       - "80:80"
+     restart: always
+     depends_on:
+       - db
+     links:
+       - db
+   phpmyadmin:
+     image: phpmyadmin/phpmyadmin
+     ports:
+       - "8080:80"
+     depends_on:
+       - db
+       - php
